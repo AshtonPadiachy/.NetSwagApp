@@ -14,5 +14,10 @@ namespace DotNetSwag
         {
             InitializeComponent();
         }
+
+        private void Order_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new OrderedItems());
+        }
     }
 }
