@@ -19,5 +19,10 @@ namespace DotNetSwag
         {
             Navigation.PushAsync(new OrderedItems());
         }
+
+        private void Selection_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new TShirtSelection());
+        }
     }
 }

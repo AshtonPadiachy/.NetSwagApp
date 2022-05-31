@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DotNetSwag.TShirtSelection"
+             Title="T-Shirts Selection">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="20,35,20,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <Image Source="black.png" Grid.RowSpan="2"/>
+                <Image Source="white.png" Grid.Column="1" Grid.RowSpan="2"
+                       />
+                <Image Source="pink.png" Grid.Column="2" Grid.RowSpan="2"
+                       />
+                <Image Source="grey.png" Grid.Row="2"
+                        />
+                
+                <Image Source="darkwhite.png" Grid.Column="1"
+                       Grid.Row="2"
+                      />
+                <Image Source="navy.png" Grid.Column="2"
+                       Grid.Row="2"
+                      />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

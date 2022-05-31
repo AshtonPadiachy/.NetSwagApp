@@ -11,7 +11,9 @@
         <Frame BackgroundColor="#627" Padding="24" CornerRadius="0">
             <Label Text=".NET SWAG Ordering App!" HorizontalTextAlignment="Center" TextColor="White" FontSize="32"/>
         </Frame>
-
+        <StackLayout>
+            <Image Source="grey.png"/>
+        </StackLayout>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.5*"/>
@@ -22,7 +24,7 @@
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
 
-            <Button Text="View Selection"/>
+            <Button x:Name="Selection" Text="View Selection" Clicked="Selection_Clicked"/>
             <Button x:Name="Order" Grid.Column="1" Text="Order Now!" Clicked="Order_Clicked"/>
         </Grid>
     </StackLayout>

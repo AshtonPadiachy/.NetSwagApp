@@ -11,7 +11,7 @@
         <Label Text="Gender"/>
         <Entry Text="{Binding Gender}"/>
         
-        <Label Text="T-Shirt Size"/>
+        <Label Text="T-Shirt Size (S, M, L, XL)"/>
         <Entry Text="{Binding TShirtSize}"/>
 
         <Label Text="Date of Order"/>
