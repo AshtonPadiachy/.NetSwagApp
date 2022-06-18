@@ -17,14 +17,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="OrderDetailsPage.xaml">
+    <EmbeddedResource Update="Views\ExtraPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="OrderedItems.xaml">
+    <EmbeddedResource Update="Views\OrderDetailsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="TShirtSelection.xaml">
+    <EmbeddedResource Update="Views\OrderedItems.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\OrderList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TShirtSelection.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Service\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 </Project>

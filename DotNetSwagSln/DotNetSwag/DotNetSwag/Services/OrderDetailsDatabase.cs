@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using DotNetSwag.Models;
 using SQLite;
 
 
-namespace DotNetSwag
+namespace DotNetSwag.Services
 {
     public class OrderDetailsDatabase
     {
         static SQLiteConnection Database;
-    
+
 
         public static OrderDetailsDatabase Instance
         {
@@ -26,13 +27,13 @@ namespace DotNetSwag
         {
             public const string DatabaseFilename = "DotNetSwagSQLite.db3";
 
-            public const SQLite.SQLiteOpenFlags Flags =
+            public const SQLiteOpenFlags Flags =
                 // open the database in read/write mode
-                SQLite.SQLiteOpenFlags.ReadWrite |
+                SQLiteOpenFlags.ReadWrite |
                 // create the database if it doesn't exist
-                SQLite.SQLiteOpenFlags.Create |
+                SQLiteOpenFlags.Create |
                 // enable multi-threaded database access
-                SQLite.SQLiteOpenFlags.SharedCache;
+                SQLiteOpenFlags.SharedCache;
 
             public static string DatabasePath
             {
@@ -77,10 +78,10 @@ namespace DotNetSwag
             }
         }
 
-        public int DeleteOrder( OrderDetails detail)
+        public int DeleteOrder(OrderDetails detail)
         {
             return Database.Delete(detail);
-                
+
         }
     }
 }

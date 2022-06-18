@@ -10,7 +10,7 @@ namespace DotNetSwag
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage())
+            MainPage = new NavigationPage(new ExtraPage())
             {
                 BarTextColor = Color.White,
                 BarBackgroundColor = (Color)App.Current.Resources["purple"]
